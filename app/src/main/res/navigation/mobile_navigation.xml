@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_inicio">
+
+    <fragment
+        android:id="@+id/navigation_inicio"
+        android:name="com.elejandria.app.elejandria.ui.InicioFragment"
+        android:label="@string/title_nav_inicio"
+        tools:layout="@layout/inicio_fragment" >
+        <action
+            android:id="@+id/action_navigation_inicio_to_navigation_libro"
+            app:destination="@id/navigation_libro" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_busqueda"
+        android:name="com.elejandria.app.elejandria.ui.BusquedaFragment"
+        android:label="@string/title_nav_busqueda"
+        tools:layout="@layout/lectura_fragment" >
+        <action
+            android:id="@+id/action_navigation_busqueda_to_navigation_libro"
+            app:destination="@id/navigation_libro" >
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_lectura"
+        android:name="com.elejandria.app.elejandria.ui.LecturaFragment"
+        android:label="@string/title_nav_lectura"
+        tools:layout="@layout/lectura_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_coleccion"
+        android:name="com.elejandria.app.elejandria.ui.ColeccionFragment"
+        android:label="@string/title_nav_lectura"
+        tools:layout="@layout/coleccion_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.elejandria.app.elejandria.ui.PerfilFragment"
+        android:label="@string/title_nav_perfil"
+        tools:layout="@layout/perfil_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_generos"
+        android:name="com.elejandria.app.elejandria.ui.GenerosFragment"
+        android:label="@string/title_nav_perfil"
+        tools:layout="@layout/generos_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_autores"
+        android:name="com.elejandria.app.elejandria.ui.AutoresFragment"
+        android:label="@string/title_nav_perfil"
+        tools:layout="@layout/autores_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_libros"
+        android:name="com.elejandria.app.elejandria.ui.LibrosFragment"
+        android:label="@string/title_nav_perfil"
+        tools:layout="@layout/libros_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_libro"
+        android:name="com.elejandria.app.elejandria.ui.LibroFragment"
+        android:label="@string/title_nav_perfil"
+        tools:layout="@layout/libro_fragment" >
+        <argument
+            android:name="bookId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

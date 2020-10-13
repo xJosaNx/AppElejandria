@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Elejandria</string>
+    <string name="title_nav_inicio">Inicio</string>
+    <string name="title_nav_busqueda">Búsqueda</string>
+    <string name="title_nav_lectura">Lectura</string>
+    <string name="title_nav_coleccion">Colección</string>
+    <string name="title_nav_perfil">Perfil</string>
+
+    <string name="tab_collection_enprogreso">Leyendo</string>
+    <string name="tab_collection_quieroleer">Quiero leer</string>
+    <string name="tab_collection_leídos">Leídos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="categorias">
+        <item>Literatura y ficción</item>
+        <item>No ficción</item>
+    </string-array>
+
+    <string-array name="listado_alfabetico">
+        <item>Letra A</item>
+        <item>Letra B</item>
+        <item>Letra C</item>
+        <item>Letra D</item>
+        <item>Letra E</item>
+        <item>Letra F</item>
+        <item>Letra G</item>
+        <item>Letra H</item>
+        <item>Letra I</item>
+        <item>Letra J</item>
+        <item>Letra K</item>
+        <item>Letra L</item>
+        <item>Letra M</item>
+        <item>Letra N</item>
+        <item>Letra O</item>
+        <item>Letra P</item>
+        <item>Letra Q</item>
+        <item>Letra R</item>
+        <item>Letra S</item>
+        <item>Letra T</item>
+        <item>Letra U</item>
+        <item>Letra V</item>
+        <item>Letra W</item>
+        <item>Letra X</item>
+        <item>Letra Y</item>
+        <item>Letra Z</item>
+    </string-array>
+</resources>
